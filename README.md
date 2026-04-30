@@ -20,7 +20,7 @@ Wymagania
 
 Instalacja
 
-git clone https://github.com/TWOJ_LOGIN/TWOJE_REPO.git
+git clone https://github.com/AdrianSasin/GP_BLIK_API_DEMO.git
 cd TWOJE_REPO
 
 dotnet restore
@@ -108,7 +108,7 @@ Brak GP_APP_ID lub GP_APP_KEY
 - nieprawidłowy endpoint
 
 Brak RedirectUrl
-- BLIK nie jest aktywny na koncie merchant
+- BLIK nie jest aktywny na koncie merchanta
 - środowisko testowe nie obsługuje tej metody
 
 Cel projektu
