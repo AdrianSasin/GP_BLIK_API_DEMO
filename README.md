@@ -3,9 +3,10 @@
 Prosta aplikacja konsolowa w .NET, która integruje się z Global Payments / eService Gateway i umożliwia utworzenie płatności BLIK.
 
 Aplikacja:
-- pobiera kwotę z konsoli
-- inicjuje płatność BLIK przez SDK
-- odbiera RedirectUrl
+- wyświetla listę produktów
+- pozwala dodawać produkty do koszyka wielokrotnie
+- oblicza łączną kwotę
+- inicjuje płatność BLIK
 - otwiera stronę płatności w przeglądarce
 
 Wymagania
@@ -51,21 +52,32 @@ lub w Visual Studio uruchom projekt (F5).
 
 Jak działa aplikacja
 
-Po uruchomieniu aplikacja poprosi o kwotę:
+Po uruchomieniu wyświetlana jest lista produktów:
 
-Podaj kwotę (PLN):
+1. Kawa
+2. Herbata
+3. Kanapka
+4. Ciasto
+5. Sok
 
-Wpisz np.:
-10
+Użytkownik:
+- wpisuje numer produktu
+- podaje ilość
+- może powtarzać ten proces wiele razy
 
-Po naciśnięciu Enter:
+Aby zakończyć dodawanie produktów, wpisz:
+
+0
+
+Po zakończeniu:
+- wyświetlane jest podsumowanie koszyka
+- obliczana jest łączna kwota
 - tworzona jest płatność BLIK
-- pobierany jest RedirectUrl
 - otwierana jest przeglądarka z płatnością
 
 Endpoint
 
-Aplikacja korzysta z środowiska testowego:
+Aplikacja korzysta ze środowiska testowego:
 https://apis.sandbox.eservicegateway.com/ucp
 
 Bezpieczeństwo
@@ -101,4 +113,4 @@ Brak RedirectUrl
 
 Cel projektu
 
-Projekt demonstracyjny pokazujący integrację płatności BLIK w aplikacji konsolowej .NET.
+Projekt demonstracyjny pokazujący integrację płatności BLIK w aplikacji konsolowej .NET z prostym koszykiem produktów.
