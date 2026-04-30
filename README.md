@@ -1,6 +1,6 @@
 # GP BLIK Console Demo
 
-Prosta aplikacja konsolowa w .NET, która integruje się z Global Payments / eService Gateway i umożliwia utworzenie płatności BLIK.
+Prosta aplikacja konsolowa w .NET, która integruje się z eService GP API i umożliwia utworzenie płatności BLIK.
 
 Aplikacja:
 - wyświetla listę produktów
@@ -13,7 +13,7 @@ Wymagania
 
 - .NET 8 SDK
 - Visual Studio 2022 lub nowszy (lub VS Code)
-- konto testowe Global Payments / eService Gateway
+- konto testowe eService GPAPI
 - dane dostępowe:
   - AppId
   - AppKey
@@ -21,7 +21,7 @@ Wymagania
 Instalacja
 
 git clone https://github.com/AdrianSasin/GP_BLIK_API_DEMO.git
-cd TWOJE_REPO
+cd GP_BLIK_API_DEMO
 
 dotnet restore
 
